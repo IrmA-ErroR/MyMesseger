@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyMessenger;
+using System;
 
 namespace MyMesseger
 {
@@ -6,8 +7,11 @@ namespace MyMesseger
     {
         static void Main(string[] args)
         {
+            Message msg = new Message();
             Console.WriteLine("Hello World!");
             Console.WriteLine("I started ");
+            Console.WriteLine(msg.ToString());
+
         }
     }
 }
