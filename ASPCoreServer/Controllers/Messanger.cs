@@ -1,4 +1,5 @@
-﻿using MyMessenger;
+﻿using Microsoft.AspNetCore.Mvc;
+using MyMessenger;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,9 @@ using System.Threading.Tasks;
 
 namespace ASPCoreServer.Controllers
 {
-
-    public class Messanger : //ControllerBase
+    [Route("api/[controller]")]
+    [ApiController]
+    public class Messanger : ControllerBase
     {
         static List<Message> ListOfMessages = new List<Message>();
         // GET api/<Messanger>/5
